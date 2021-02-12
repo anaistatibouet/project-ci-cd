@@ -6,6 +6,8 @@
 
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=anaistatibouet_project-ci-cd&metric=security_rating)](https://sonarcloud.io/dashboard?id=anaistatibouet_project-ci-cd)
 
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=anaistatibouet_project-ci-cd&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=anaistatibouet_project-ci-cd)
+
 ## Tools
 
 - Github (version control system))
