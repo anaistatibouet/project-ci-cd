@@ -27,8 +27,7 @@ jobs:
     - name: Test
       run: |
         npm test
-
-jobs:
+        
   deploy:
     runs-on: ubuntu-latest
     steps:
