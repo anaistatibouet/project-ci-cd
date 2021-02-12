@@ -1,0 +1,33 @@
+name: CI
+on: 
+  push:
+    branches:
+      - dev
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+    - name: Install dependencies
+      run: |
+        npm install
+    - name: Test
+      run: |
+        npm test
+
+  pull-request:
+    if: success()
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: pull-request
+      uses: repo-sync/pull-request@v2
+      with:
+        destination_branch: "main"
+        pr_label: "automerge"
+        github_token: ${{ secrets.GITHUB_TOKEN }}
