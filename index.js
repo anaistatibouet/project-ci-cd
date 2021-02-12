@@ -19,5 +19,5 @@ app.get('/sum', (req, res) => {
 })
   
 app.listen(process.env.PORT || 8080, () => {
-    console.log(`Example app listening at http://localhost:${PORT}`)
+    console.log(`Example app listening at http://localhost:${process.env.PORT}`)
 })
