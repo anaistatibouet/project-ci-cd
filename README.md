@@ -2,6 +2,8 @@
 
 ## Tools
 
-- Github
-- JEST
+- Github (version control system))
+- JEST (test js app)
+- SonarCloud (code quality)
+- Heroku (deployment)
 
