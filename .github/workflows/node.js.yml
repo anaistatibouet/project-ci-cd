@@ -17,9 +17,7 @@ jobs:
     - name: Install dependencies
       run: |
         npm install
-  test:
-    runs-on: ubuntu-latest
-    
+  test:    
     steps:
     - name: Test
       run: |
