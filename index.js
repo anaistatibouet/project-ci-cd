@@ -3,7 +3,6 @@ require('dotenv').config()
 
 const express = require('express');
 const tool = require('./functions/sum');
-const PORT = 8080;
 const app = express();
 
 app.disable("x-powered-by");
@@ -19,6 +18,6 @@ app.get('/sum', (req, res) => {
     )
 })
   
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log(`Example app listening at http://localhost:${PORT}`)
 })
